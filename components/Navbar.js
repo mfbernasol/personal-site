@@ -31,7 +31,7 @@ export default function Navbar(){
       >
         <Flex alignItems='center' justifyContent='space-between' mx='auto'>
           <Flex>
-            <a href='/' display='flex' alignItems='center'></a>
+            <Link href='/' display='flex' alignItems='center'></Link>
             <chakra.h1 fontSize='xl' fontWeight='bold' ml='2' textColor='red.500'>
               mfb
             </chakra.h1>
@@ -84,13 +84,13 @@ export default function Navbar(){
                   onClick={mobileNav.onClose}
                 />
                 <Button w='full' variant='ghost'>
-                  <a href='#projects'>projects</a>
+                  <Link href='#projects'>projects</Link>
                 </Button>
                 {/* <Button w='full' variant='ghost'>
                 <a href='#skills'>skills</a>
                 </Button> */}
                 <Button w='full' variant='ghost'>
-                <a href='#contact'>contact</a>
+                <Link href='#contact'>contact</Link>
                 </Button>
               </VStack>
             </Box>

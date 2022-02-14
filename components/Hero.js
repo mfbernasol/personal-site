@@ -44,8 +44,6 @@ export default function Hero() {
           ml={10}
           color='gray.600'
           fontWeight='medium'
-          fontSize='md'
-          textAlign=''
           fontSize={{ md: 'lg' }}
         >
           Recently graduated with a B.S. in Computer Science from Lewis
