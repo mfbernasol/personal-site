@@ -43,7 +43,6 @@ export default function Hero() {
           mt={5}
           ml={10}
           color='gray.600'
-          fontWeight='medium'
           fontSize={{ md: 'lg' }}
         >
           Recently graduated with a B.S. in Computer Science from Lewis

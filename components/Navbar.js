@@ -9,6 +9,7 @@ import {
   VisuallyHidden,
   HStack,
   Button,
+  Heading,
   useDisclosure,
   VStack,
   IconButton,
@@ -31,10 +32,9 @@ export default function Navbar(){
       >
         <Flex alignItems='center' justifyContent='space-between' mx='auto'>
           <Flex>
-            <Link href='/' display='flex' alignItems='center'></Link>
-            <chakra.h1 fontSize='xl' fontWeight='bold' ml='2' textColor='red.500'>
+            <Heading fontSize='xl' fontWeight='bold' ml='2' textColor='red.500'>
               mfb
-            </chakra.h1>
+            </Heading>
           </Flex>
           <HStack display='flex' alignItems='center' spacing={1}>
             <HStack
