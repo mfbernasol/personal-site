@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-export default function Navbar(){
+export default function Navbar() {
   const bg = useColorModeValue('white', 'gray.800');
   const mobileNav = useDisclosure();
 
@@ -46,9 +46,6 @@ export default function Navbar(){
               <Button variant='ghost'>
                 <Link href='#projects'>projects</Link>
               </Button>
-              {/* <Button variant='ghost'>
-                <a href='#skills'>skills</a>
-              </Button> */}
               <Button variant='ghost'>
                 <Link href='#contact'>contact</Link>
               </Button>
@@ -90,7 +87,7 @@ export default function Navbar(){
                 <a href='#skills'>skills</a>
                 </Button> */}
                 <Button w='full' variant='ghost'>
-                <Link href='#contact'>contact</Link>
+                  <Link href='#contact'>contact</Link>
                 </Button>
               </VStack>
             </Box>
