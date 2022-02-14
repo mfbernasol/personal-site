@@ -63,7 +63,7 @@ export default function Hero() {
               cursor='pointer'
             >
               <Link
-                href='https://drive.google.com/file/d/1ccGdJEIfOHHN39twmVU4MdG7VajVSHLZ/view'
+                href='https://drive.google.com/file/d/1ccGdJEIfOHHN39twmVU4MdG7VajVSHLZ/view?usp=sharing'
                 target='_blank'
               >
                 resume
