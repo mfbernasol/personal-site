@@ -26,12 +26,12 @@ export default function Card({
         w={{ sm: '100%', md: '540px' }}
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
-        rounded={'md'}
+        rounded={'xl'}
         p={6}
         overflow={'hidden'}
       >
-        <Box h={'210px'} bg={'gray.100'} mt={-1} mx={7} mb={6} pos={'relative'}>
-          <Image src={photo} alt='image' heigth={100} layout='fill' />
+        <Box h={'310px'} bg={'gray.100'} mt={-1} mx={7} mb={6} pos={'relative'}>
+          <Image src={photo} alt='image' layout='fill' />
         </Box>
         <Stack>
           <Heading

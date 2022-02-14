@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
   chakra,
@@ -15,8 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-
-export default function Navbar() {
+export default function Navbar(){
   const bg = useColorModeValue('white', 'gray.800');
   const mobileNav = useDisclosure();
 
@@ -31,16 +31,8 @@ export default function Navbar() {
       >
         <Flex alignItems='center' justifyContent='space-between' mx='auto'>
           <Flex>
-            <chakra.a
-              href='/'
-              title='Choc Home Page'
-              display='flex'
-              alignItems='center'
-            >
-
-              <VisuallyHidden>Choc</VisuallyHidden>
-            </chakra.a>
-            <chakra.h1 fontSize='xl' fontWeight='bold' ml='2'>
+            <a href='/' display='flex' alignItems='center'></a>
+            <chakra.h1 fontSize='xl' fontWeight='bold' ml='2' textColor='red.500'>
               mfb
             </chakra.h1>
           </Flex>
@@ -51,10 +43,15 @@ export default function Navbar() {
               color='brand.500'
               display={{ base: 'none', md: 'inline-flex' }}
             >
-              <Button variant='ghost'>projects</Button>
-              <Button variant='ghost'>skills</Button>
-              <Button variant='ghost'>contact</Button>
-     
+              <Button variant='ghost'>
+                <a href='#projects'>projects</a>
+              </Button>
+              {/* <Button variant='ghost'>
+                <a href='#skills'>skills</a>
+              </Button> */}
+              <Button variant='ghost'>
+                <a href='#contact'>contact</a>
+              </Button>
             </HStack>
             <Box display={{ base: 'inline-flex', md: 'none' }}>
               <IconButton
@@ -86,17 +83,15 @@ export default function Navbar() {
                   aria-label='Close menu'
                   onClick={mobileNav.onClose}
                 />
-
                 <Button w='full' variant='ghost'>
-                  projects
+                  <a href='#projects'>projects</a>
                 </Button>
+                {/* <Button w='full' variant='ghost'>
+                <a href='#skills'>skills</a>
+                </Button> */}
                 <Button w='full' variant='ghost'>
-                  skills
+                <a href='#contact'>contact</a>
                 </Button>
-                <Button w='full' variant='ghost'>
-                  contact
-                </Button>
-
               </VStack>
             </Box>
           </HStack>

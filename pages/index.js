@@ -1,14 +1,14 @@
-
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
-import Skills from '../components/Skills';
 import ContactSection from '../components/ContactSection';
 import Realty from '../assets/images/realty.png';
 import Cheeri from '../assets/images/cheeri.png';
 import Contact from '../assets/images/contact-keeper.png';
 import Gym from '../assets/images/xsthetix.png';
-import profile from '../assets/images/me.png'
+import { FaGithub } from 'react-icons/fa';
+import { Link } from '@chakra-ui/react';
+
 import {
   Box,
   Text,
@@ -19,23 +19,37 @@ import {
   Icon,
   Spacer,
 } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
 import { filterProps } from 'framer-motion';
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <Box>
+      <Navbar section='#skills' />
       <Hero />
-
       <main>
-        <Heading textAlign='center'>PROJECTS</Heading>
+        <Heading textAlign='center' id={'projects'}>
+          PROJECTS
+        </Heading>
         <Spacer />
         <HStack alignItems='center' justifyContent='center' spacing='10px'>
-          <Heading textAlign='center' fontSize='lg' mt='5' textColor='red.400'>
+          <Text
+            textAlign='center'
+            fontSize='lg'
+            fontWeight='bold'
+            mt='5'
+            textColor='gray.500'
+          >
             Here are some projects I've worked on. Find all the rest on my
-          </Heading>
+          </Text>
+          <Link href='https://github.com/mfbernasol' target='_blank'>
+            <Icon as={FaGithub} mt='5' boxSize={30} alt='github' />
+          </Link>
         </HStack>
-        <SimpleGrid columns={2}>
+        <Flex
+          flexWrap='wrap'
+          justifyContent='center'
+          alignItems='center'
+          m='10'
+        >
           <Card
             photo={Realty}
             demoLink={'https://realty-react-e84mqaa6v-mfbernasol.vercel.app/'}
@@ -66,10 +80,16 @@ export default function Home() {
             desc="Landing page that's currently being developed for a client's personal training business"
             builtWith='GatsbyJS | TailwindCSS'
           />
-        </SimpleGrid>
+        </Flex>
       </main>
-      <Skills />
-      <ContactSection />
-    </div>
+
+      {/* <div id='skills'>
+        <Skills />
+      </div> */}
+
+      <div id='contact'>
+        <ContactSection />
+      </div>
+    </Box>
   );
 }
