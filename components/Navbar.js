@@ -44,13 +44,13 @@ export default function Navbar(){
               display={{ base: 'none', md: 'inline-flex' }}
             >
               <Button variant='ghost'>
-                <a href='#projects'>projects</a>
+                <Link href='#projects'>projects</Link>
               </Button>
               {/* <Button variant='ghost'>
                 <a href='#skills'>skills</a>
               </Button> */}
               <Button variant='ghost'>
-                <a href='#contact'>contact</a>
+                <Link href='#contact'>contact</Link>
               </Button>
             </HStack>
             <Box display={{ base: 'inline-flex', md: 'none' }}>

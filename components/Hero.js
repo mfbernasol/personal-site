@@ -17,9 +17,9 @@ import { FaLinkedin } from 'react-icons/fa';
 export default function Hero() {
   return (
     <Flex px={4} py={20} mx='auto'>
-      <Box w='full' mx='auto' w={{ lg: 8 / 12, xl: 5 / 12 }}>
+      <Box  mx='auto' w={{ lg: 8 / 12, xl: 5 / 12 }}>
         <VStack>
-          <Image src={profilePic} width='100' height='100' />
+          <Image src={profilePic} width='100' height='100' alt='profile'/>
           <Heading
             mb={3}
             fontSize={{ base: '3xl', md: '5xl' }}
@@ -28,9 +28,9 @@ export default function Hero() {
             textAlign='center'
             color={useColorModeValue('red.500', 'white')}
           >
-            <Text as='span' color='gray.600'>
-              Hi, I'm
-            </Text>{' '}
+            <Text as='span' color='gray.600' pr='2'>
+              Hi, I&#39;m
+            </Text> 
             Michael Bernasol
           </Heading>
         </VStack>

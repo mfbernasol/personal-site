@@ -38,7 +38,7 @@ export default function Home() {
             mt='5'
             textColor='gray.500'
           >
-            Here are some projects I've worked on. Find all the rest on my
+            Here are some projects I&#39;ve worked on. Find all the rest on my
           </Text>
           <Link href='https://github.com/mfbernasol' target='_blank'>
             <Icon as={FaGithub} mt='5' boxSize={30} alt='github' />
