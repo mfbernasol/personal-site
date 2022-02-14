@@ -1,8 +1,9 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Link } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
+import NextImage from 'next/image';
 import {
-  chakra,
   Box,
   useColorModeValue,
   Flex,
@@ -16,17 +17,19 @@ export default function Hero() {
   return (
     <Flex px={4} py={20} mx='auto'>
       <Box w='full' mx='auto' w={{ lg: 8 / 12, xl: 5 / 12 }}>
-        <Heading
-          mb={3}
-          fontSize={{ base: '3xl', md: '5xl' }}
-          fontWeight='bold'
-          lineHeight='shorter'
-          textAlign='center'
-          color={useColorModeValue('red.500', 'white')}
-        >
-          Hi, I'm Michael Bernasol
-        </Heading>
-        <Heading textAlign='center'>A Software Developer</Heading>
+
+          <Heading
+            mb={3}
+            fontSize={{ base: '3xl', md: '5xl' }}
+            fontWeight='bold'
+            lineHeight='shorter'
+            textAlign='center'
+            color={useColorModeValue('red.500', 'white')}
+          >
+          <Text as='span' color='gray.500'>Hi,</Text> I'm Michael Bernasol
+          </Heading>
+
+        <Heading textAlign='center' color='gray.500' fontWeight='bold'>Software Developer.</Heading>
         <Text
           mb={5}
           mt={5}
@@ -37,9 +40,9 @@ export default function Hero() {
           textAlign=''
           fontSize={{ md: 'lg' }}
         >
-          Recent graduate with a B.S. in Computer Science from Lewis University. My interests
-          include software engineering, full-stack development and web
-          technologies. Passionate about continuous learning and challenging
+          Recent graduate with a B.S. in Computer Science from Lewis University.
+          My interests include software engineering, full-stack development and
+          web technologies. Passionate about continuous learning and challenging
           myself in the world of tech.
         </Text>
         <HStack alignItems='center' justifyContent='center'>

@@ -11,8 +11,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-
-import {FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 export default function Card({
   photo,
   title,
@@ -22,7 +21,7 @@ export default function Card({
   githubLink,
 }) {
   return (
-    <Center py={6}>
+    <Center py={6} px={6}>
       <Box
         w={{ sm: '100%', md: '540px' }}
         bg={useColorModeValue('white', 'gray.900')}
@@ -31,16 +30,8 @@ export default function Card({
         p={6}
         overflow={'hidden'}
       >
-        <Box
-          h={'210px'}
-          bg={'gray.100'}
-          mt={-6}
-          mx={-6}
-          mb={6}
-          pos={'relative'}
-        >
-          <Image src={photo} alt='image'
-            layout={'fill'}/>
+        <Box h={'210px'} bg={'gray.100'} mt={-1} mx={7} mb={6} pos={'relative'}>
+          <Image src={photo} alt='image' heigth={100} layout='fill' />
         </Box>
         <Stack>
           <Heading
@@ -51,19 +42,25 @@ export default function Card({
             {title}
           </Heading>
           <Text color={'gray.500'}>{desc}</Text>
-          <Text color={'gray.500'} fontWeight='medium'>Built With: {builtWith} </Text>
+          <HStack>
+            <Text color={'gray.600'} fontWeight='bold'>
+              Built With:
+            </Text>
+            <Text fontWeight='medium'>{builtWith}</Text>
+          </HStack>
         </Stack>
         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
           <HStack direction={'column'} spacing={2} fontSize={'sm'}>
-            <Link href={demoLink}>
+            <Link href={demoLink} target='_blank'>
               <Button>View Live Demo</Button>
             </Link>
-            <Link href={githubLink}>
+            <Link href={githubLink} target='_blank'>
               <Button leftIcon={<FaGithub />}>Source Code</Button>
             </Link>
           </HStack>
         </Stack>
       </Box>
     </Center>
+    
   );
 }
