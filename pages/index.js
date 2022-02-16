@@ -69,7 +69,7 @@ export default function Home() {
             demoLink='https://sheltered-citadel-24897.herokuapp.com/'
             githubLink={'https://github.com/mfbernasol/contact-keeper-react'}
             title='Contact Keeper'
-            desc='Web app where can users to sign-up to create and save their contacts info'
+            desc='Web app where users can sign-up for an account to create and save their contacts info'
             builtWith='React | Context API | Express.js | JWT | MongoDB'
           />
           <Card
