@@ -47,8 +47,7 @@ export default function Hero() {
         >
           Recently graduated with a B.S. in Computer Science from Lewis
           University. My interests include software engineering, full-stack
-          development and web technologies. Passionate about continuous learning
-          and challenging myself in the world of tech.
+          development and web technologies. Passionate about building things with tech and learning new skills along the way.
         </Text>
         <HStack alignItems='center' justifyContent='center'>
           <Link>
