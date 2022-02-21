@@ -30,7 +30,12 @@ export default function Home() {
           PROJECTS
         </Heading>
         <Spacer />
-        <HStack alignItems='center' justifyContent='center' spacing='10px'>
+        <Flex
+          flex='wrap'
+          alignItems='center'
+          justifyContent='center'
+          spacing='10px'
+        >
           <Text
             textAlign='center'
             fontSize='lg'
@@ -38,12 +43,12 @@ export default function Home() {
             mt='5'
             textColor='gray.500'
           >
-            Here are some projects I&#39;ve worked on. Find all the rest on my
+            Here are some projects I&#39;ve worked on. Find all the rest on my{' '}
+            <Link href='https://github.com/mfbernasol' target='_blank'>
+              <Icon color='black' as={FaGithub} boxSize={{ md: 30 }} alt='github' />
+            </Link>
           </Text>
-          <Link href='https://github.com/mfbernasol' target='_blank'>
-            <Icon as={FaGithub} mt='5' boxSize={30} alt='github' />
-          </Link>
-        </HStack>
+        </Flex>
         <Flex
           flexWrap='wrap'
           justifyContent='center'

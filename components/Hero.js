@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@chakra-ui/react';
 import Image from 'next/image';
+import NextLink from 'next/link'
 import profilePic from '../assets/images/me.png';
 import {
   Box,
@@ -66,13 +67,12 @@ export default function Hero() {
               </Link>
             </Button>
           </Link>
-          <Link
+          <NextLink
             href='https://www.linkedin.com/in/mfbernasol/'
-            isExternal
             target='_blank'
           >
             <Icon as={FaLinkedin} boxSize={8} />
-          </Link>
+          </NextLink>
         </HStack>
       </Box>
     </Flex>
